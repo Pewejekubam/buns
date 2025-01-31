@@ -1,0 +1,17 @@
+{
+  "name_servers": [
+    "example-ns1.example.com",
+    "example-ns2.example.com",
+    "example-ns3.example.com",
+    "example-ns4.example.com"
+  ],
+  "backup_directories": [
+    "/etc/bind",
+    "/var/cache/bind"
+  ],
+  "retention_limit": 20,
+  "private_key": "/home/example/.ssh/id_example_key",
+  "backup_operation_root": "/example/backup/root",
+  "user": "example_user",
+  "group": "example_group"
+}
