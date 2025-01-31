@@ -8,7 +8,7 @@ This project contains a Bash script (`buns.sh`) that performs backups of name se
 
 In all practicality, this script can be used to backup any linux host to the local host, but it's genesis was the need to backup name servers from several remote third-party locations and keep the configs and zone files local for security and recovery reasons.
 
-File system created by the script under the specified root:
+File system created by the script below the specified root:
 ```text
 /backup_operation_root
 ├── name_servers
