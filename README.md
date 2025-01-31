@@ -64,7 +64,8 @@ The `buns.json` file contains the following configuration parameters:
   "backup_operation_root": "/example/backup/root",
   "user": "example_user",
   "group": "example_group"
-}```
+}
+```
 
 - `name_servers`: List of name servers to back up.
 - `backup_directories`: List of directories to back up from each server.
