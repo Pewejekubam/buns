@@ -6,6 +6,8 @@
 
 This project contains a Bash script (`buns.sh`) that performs backups of name server configurations and manages the retention of those backups. The script reads configuration parameters from a YAML file (`buns.yaml`).
 
+In all practicality, this script can be used to backup any linux host to the local host, but it's genesis was the need to backup name servers from several remote third-party locations and keep the configs and zone files local for security and recovery reasons.
+
 File system created by the script under the specified root:
 /backup_operation_root
 ├── name_servers
@@ -67,8 +69,7 @@ The `buns.json` file contains the following configuration parameters:
 - `backup_directories`: List of directories to back up from each server.
 - `retention_limit`: Maximum number of backups to retain.
 - `private_key`: Path to the SSH private key for connecting to the servers.
-- `backup_target_root`: Root directory where backups will be stored.
-- `log_file`: Path to the log file.
+- `backup_operation_root`: Root directory where the script will create the log file and backup files.
 - `user`: User to set as the owner of the backup files.
 - `group`: Group to set as the owner of the backup files.
 
